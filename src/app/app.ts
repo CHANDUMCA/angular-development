@@ -15,6 +15,10 @@ export class App {
 
   name: string = 'Madhu';
   isDisabled: boolean = true;
+  showMessage() {
+  alert('Hello from Aacharya 👋');
+}
+
 
   
   sayHello() {
