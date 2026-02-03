@@ -14,6 +14,8 @@ export class App {
   protected readonly title = signal('angular-learning');
 
   name: string = 'Madhu';
+  isDisabled: boolean = true;
+
   
   sayHello() {
   return `Hello ${this.name}, welcome to Angular`;
