@@ -1,12 +1,24 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  standalone: true,
+  imports: [RouterOutlet, FormsModule],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
+
   protected readonly title = signal('angular-learning');
+
+  name: string = 'Madhu';
+  
+  sayHello() {
+  return `Hello ${this.name}, welcome to Angular`;
+}
+  sayAng(){
+    return `mass`;
+  }
 }
