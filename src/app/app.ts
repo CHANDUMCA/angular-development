@@ -16,23 +16,10 @@ import { FormsModule } from '@angular/forms';
 export class App {
 
   protected readonly title = signal('angular-learning');
-
-  name: string = 'Madhu';
   firstname: string = '';
   middlename:string='';
   lastname:string='';
-
-  isDisabled: boolean = true;
-  showMessage() {
-  alert('Hello from Aacharya 👋');
-}
-
-
-  
-  sayHello() {
-  return `Hello ${this.name}, welcome to Angular`;
-}
-  sayAng(){
-    return `mass`;
+  get finalnameis(): String{
+    return `${this.firstname}${this.middlename} ${this.lastname}`.trim();
   }
 }
